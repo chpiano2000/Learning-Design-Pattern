@@ -24,19 +24,3 @@ class RoundRobin:
         server = self.servers[self.index]
         self.index = (self.index + 1) % len(self.servers)
         return server
-
-
-lb1 = RoundRobin()
-lb2 = RoundRobin()
-
-print("Singleton -->", lb1 == lb2)
-
-lb1.add_server("Server 1")
-lb1.add_server("Server 2")
-lb1.add_server("Server 3")
-
-print(lb1.get_next_server())
-print(lb1.get_next_server())
-print(lb1.get_next_server())
-print(lb1.get_next_server())
-print(lb1.get_next_server())
