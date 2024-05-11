@@ -21,3 +21,20 @@
 
 - Implementing round-robin class, which return which server to round to in the list of servers
 - [code](./singleton/singleton.py)
+
+## Strategy Pattern
+
+### Problem
+
+### Implementation
+
+- Suppose that we have to develop a function to calculate all the discount campaigns
+- [before code](./strategy/before.py)
+  - This is a bad implementation because the function `get_price` has a lot of responsibilities.
+  - Each campagin is a different responsibility, but the function `get_price` takes all of them.
+  - This is a bad implementation because the function `get_price` is not scalable.
+- [after code](./strategy/after.py)
+  - This is a good implementation because the function `get_price` has only one responsibility.
+  - There will be a dedicated function to calculate the price of each campaign.
+  - the `get_price` is even more cleaner since the is a mapper between the campaign name and the function that calculates the price.
+  - This is a good implementation because the function `get_price` is scalable, there will be no change in the function `get_price` when a new campaign is added.
