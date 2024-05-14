@@ -24,7 +24,7 @@
 
 ## Strategy Pattern
 
-### Problem
+- Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
 ### Implementation
 
@@ -45,11 +45,10 @@
 
 ### Implementation
 
-- [facade](./Facade/facade.py) class is a class that provides access to the subsystems, which in this case is a set of price calculators:
+- [facade](Facade/facade.py) class is a class that provides access to the subsystems, which in this case is a set of price calculators:
 
   - `Discount` calculator
   - `Shipping` calculator
   - `Fees` calculator
 
 - These calculator classes aren’t aware of the facade’s existence. They operate within the system and work with each other directly.
-
