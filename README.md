@@ -38,3 +38,11 @@
   - There will be a dedicated function to calculate the price of each campaign.
   - the `get_price` is even more cleaner since the is a mapper between the campaign name and the function that calculates the price.
   - This is a good implementation because the function `get_price` is scalable, there will be no change in the function `get_price` when a new campaign is added.
+
+## Facade Pattern
+
+## Proxy Pattern
+
+### Implementation
+
+-
