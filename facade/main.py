@@ -1,5 +1,5 @@
 from domain import Discount, Shipping, Fees
-from facade_class import EcommerceFacade
+from facade import EcommerceFacade
 
 
 def buy(price: float) -> float:

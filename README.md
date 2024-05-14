@@ -38,3 +38,17 @@
   - There will be a dedicated function to calculate the price of each campaign.
   - the `get_price` is even more cleaner since the is a mapper between the campaign name and the function that calculates the price.
   - This is a good implementation because the function `get_price` is scalable, there will be no change in the function `get_price` when a new campaign is added.
+
+## Facade Pattern
+
+- Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+
+### Implementation
+
+- [facade](./Facade/facade.py) class is a class that provides access to the subsystems, which in this case is a set of price calculators:
+
+  - `Discount` calculator
+  - `Shipping` calculator
+  - `Fees` calculator
+
+- These calculator classes aren’t aware of the facade’s existence. They operate within the system and work with each other directly.
